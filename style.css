@@ -1,0 +1,452 @@
+p { text-align: left; }
+h2 {
+    font-size: 24px;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+}
+.txt_24 {
+    font-size: 16px;
+    line-height: 1.6em;
+    font-weight: 300;
+}
+.txt_14 {
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: 300;
+}
+.txt_body {
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: 300;
+}
+body > * {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.top {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#canvas {
+    width: 100%;
+    height: 100%;
+}
+/* .top {
+    width: 100%;
+    height: 100%;
+    background: url('./img/background.jpg') repeat;
+    background-size: cover;    
+    background-position: center 0;
+    position: relative;
+    -moz-animation: background-slide 16s linear infinite alternate-reverse;
+    -webkit-animation: background-slide 16s linear infinite alternate-reverse;
+    animation: background-slide 16s linear infinite alternate-reverse;
+}
+@-moz-keyframes background-slide {
+    from { background-position: center 0; }
+    to { background-position: center -500px; }
+}
+@-webkit-keyframes background-slide {
+    from { background-position: center 0; }
+    to { background-position: center -500px; }
+}
+@keyframes background-slide {
+    from { background-position: center 0; }
+    to { background-position: center -500px; }
+} */
+
+.top .inner_top {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -118px;
+}
+
+.top [class^="logo"] {
+    position: relative;
+    width: 180px;
+    fill: #fff;
+}
+
+.top .logo_left {
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    -moz-animation: logo_l 1.6s ease;
+    -webkit-animation: logo_l 1.6s ease;
+    animation: logo_l 1.6s ease;
+}
+@-moz-keyframes logo_l {
+    from { 
+        left: -180px; 
+        margin-left: 0px;
+    }
+    to { left: 50%;
+        margin-left: -90px;
+    }
+}
+@-webkit-keyframes logo_l {
+    from { 
+        left: -180px; 
+        margin-left: 0px;
+    }
+    to { left: 50%;
+        margin-left: -90px;
+    }
+}
+@keyframes logo_l {
+    from { 
+        left: -180px; 
+        margin-left: 0px;
+    }
+    to { left: 50%;
+        margin-left: -90px;
+    }
+}
+.top .logo_right {
+    position: absolute;
+    right: 50%;
+    margin-right: -90px;
+    -moz-animation: logo_r 1.6s ease;
+    -webkit-animation: logo_r 1.6s ease;
+    animation: logo_r 1.6s ease;
+}
+@-moz-keyframes logo_r {
+    from { 
+        right: -180px; 
+        margin-right: 0px;
+    }
+    to { right: 50%;
+        margin-right: -90px;
+    }
+}
+@-webkit-keyframes logo_r {
+    from { 
+        right: -180px; 
+        margin-right: 0px;
+    }
+    to { right: 50%;
+        margin-right: -90px;
+    }
+}
+@keyframes logo_r {
+    from { 
+        right: -180px; 
+        margin-right: 0px;
+    }
+    to { right: 50%;
+        margin-right: -90px;
+    }
+}
+.top .logo {
+    left: 50%;
+    margin-left: -90px;
+}
+.top .txt_sub {
+    padding: 0 16px;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6em;
+    text-align: center;
+    color: #fff;
+}
+.top .down-arrow {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+    -moz-animation: arrow 0.8s infinite alternate-reverse ease-in-out;
+    -webkit-animation: arrow 0.8s infinite alternate-reverse ease-in-out;
+    animation: arrow 0.8s infinite alternate-reverse ease-in-out;
+}
+@-moz-keyframes arrow {
+    from { bottom: 30px; }
+    to { bottom: 50px; }
+}
+@-webkit-keyframes arrow {
+    from { bottom: 30px; }
+    to { bottom: 50px; }
+}
+@keyframes arrow {
+    from { bottom: 30px; }
+    to { bottom: 50px; }
+}
+
+.top .down-arrow svg {
+    fill: #fff;
+    width: 36px;    
+}
+.intro {
+    display: table;
+    padding: 0 16px;
+    height: 100%;
+    color: #fff;
+    background-color: #000;
+}
+.contents {
+    padding: 60px 16px;
+    background-color: #eee;
+}
+.contents .inner {
+    padding-bottom: 100px;
+}
+.contents .inner:last-child {
+    padding-bottom: 0;
+}
+.box_title {
+    width: 100%;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+    margin-bottom: 100px;
+}
+.box_title .title {
+    float: left;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.box_title .numb {
+    float: right;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9e9e9e;
+}
+.list_profile {
+    width: 100%;
+}
+.list_profile li {
+    float: left;
+    width: 48%;    
+    margin: 0 auto 60px auto;
+    padding-left: 10px;
+    text-align: left;
+    border-left: 1px solid #000;
+    box-sizing: border-box;
+}
+.list_profile li:first-child {
+    padding-top: 0;
+}
+.list_profile li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.list_profile .txt_name {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.list_profile .txt_positon {
+    font-size: 14px;
+    line-height: 1.4em;
+}
+.portfolio .box_title {
+    margin-bottom: 60px;
+}
+.list_logo li {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.list_logo li img {
+    width: 100%;
+}
+.footer {
+    display: block;
+    background-color: #000;
+    width: 100%;
+    padding: 24px 6px;
+}
+.footer .logo_small {
+    width: 60px;
+    fill: #fff;
+    margin-bottom: 16px;
+}
+.footer p {
+    font-size: 11px;
+    line-height: 1.6em;
+    color: #fff;
+    top: 15px;
+}
+.footer .txt_ccopy {
+    margin-top: 10px;
+}
+
+
+@media (min-width:768px) {
+    h2 { font-size: 44px; margin-bottom: 48px; }
+    h3 {
+        font-size: 32px;
+    }
+    .txt_24 {
+        font-size: 24px;
+    }
+    .txt_14 {
+        font-size: 14px;
+    }
+    .txt_body {
+        font-size: 19px;
+    }
+    .top .inner_top {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        margin-top: -118px;
+    }
+    /* 로고 크게 수정해야함 */
+    .top [class^="logo"] {
+        position: relative;
+        width: 280px;
+        fill: #fff;
+    }
+    
+    .top .logo_left {
+        position: absolute;
+        left: 50%;
+        margin-left: -140px;
+        -moz-animation: logo_l 1.6s ease;
+        -webkit-animation: logo_l 1.6s ease;
+        animation: logo_l 1.6s ease;
+    }
+    @-moz-keyframes logo_l {
+        from { 
+            left: -180px; 
+            margin-left: 0px;
+        }
+        to { left: 50%;
+            margin-left: -140px;
+        }
+    }
+    @-webkit-keyframes logo_l {
+        from { 
+            left: -180px; 
+            margin-left: 0px;
+        }
+        to { left: 50%;
+            margin-left: -140px;
+        }
+    }
+    @keyframes logo_l {
+        from { 
+            left: -280px; 
+            margin-left: 0px;
+        }
+        to { left: 50%;
+            margin-left: -140px;
+        }
+    }
+    .top .logo_right {
+        position: absolute;
+        right: 50%;
+        margin-right: -140px;
+        -moz-animation: logo_r 1.6s ease;
+        -webkit-animation: logo_r 1.6s ease;
+        animation: logo_r 1.6s ease;
+    }
+    @-moz-keyframes logo_r {
+        from { 
+            right: -280px; 
+            margin-right: 0px;
+        }
+        to { right: 50%;
+            margin-right: -140px;
+        }
+    }
+    @-webkit-keyframes logo_r {
+        from { 
+            right: -280px; 
+            margin-right: 0px;
+        }
+        to { right: 50%;
+            margin-right: -140px;
+        }
+    }
+    @keyframes logo_r {
+        from { 
+            right: -280px; 
+            margin-right: 0px;
+        }
+        to { right: 50%;
+            margin-right: -140px;
+        }
+    }
+    .top .logo {
+        left: 50%;
+        margin-left: -140px;
+    }
+    .top .txt_sub {
+        padding: 0 16px;
+        margin-top: 30px;
+        font-size: 24px;
+        line-height: 1.6em;
+        text-align: center;
+        color: #fff;
+    }
+    /* 로고 크게 수정해야함 */
+    .intro {
+        width: 100%;
+        height: 500px;
+    }
+    .contents {
+        padding: 150px 0;
+    }
+    .contents .inner {
+        padding-bottom: 150px;
+    }
+    .box_title {
+        margin-bottom: 150px;
+    }
+    .box_title .title {
+        font-size: 16px;
+    }
+    .box_title .numb {
+        font-size: 16px;
+    }
+    .list_profile li {
+        width: 33.3%;    
+        padding-left: 16px;
+    }
+    
+    .list_profile .txt_name {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .list_profile .txt_positon {
+        font-size: 19px;
+        line-height: 1.6em;
+    }
+    .portfolio .box_title {
+        margin-bottom: 100px;
+    }
+    .list_logo li {
+        width: 33.3%;
+    }
+    .footer {
+        display: table;
+        background-color: #000;
+        width: 100%;
+        height: 160px;
+        padding: 0;
+    }
+    .footer p {
+        position: relative;
+        top: 15px;
+        font-size: inherit;
+        line-height: inherit;
+    }
+    .footer .logo_small {
+        width: 80px;
+        fill: #fff;
+        margin-bottom: 0;
+    }
+    .footer .txt_ccopy {
+        text-align: right;
+        margin-top: 0;
+    }
+}

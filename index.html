@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./grid.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <title>DSL CAPITAL</title>
+</head>
+
+<body>
+    <div class="top">
+        <canvas id="canvas"></canvas>
+        <span class="text" id="txtInfinity"></span>
+        <div class="inner_top">
+        <svg version="1.1" class="logo_left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 70.866 45.224" style="enable-background:new 0 0 70.866 45.224;" xml:space="preserve">
+                <path d="M38.353,15.274v-3.592c-2.23,0-4.045-1.814-4.045-4.045c0-2.23,1.814-4.045,4.045-4.045
+		c2.23,0,4.045,1.814,4.045,4.045h3.592C45.99,3.419,42.571,0,38.353,0c-4.218,0-7.637,3.419-7.637,7.637
+        C30.716,11.855,34.135,15.274,38.353,15.274z" />
+        </svg>
+        <svg version="1.1" class="logo_right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 70.866 45.224" style="enable-background:new 0 0 70.866 45.224;" xml:space="preserve">
+                <path d="M45.99,15.274c0-4.218-3.419-7.637-7.637-7.637v3.592c2.23,0,4.045,1.815,4.045,4.045
+		c0,2.23-1.814,4.045-4.045,4.045c-2.23,0-4.045-1.814-4.045-4.045h-3.592c0,4.218,3.419,7.637,7.637,7.637
+		C42.57,22.911,45.99,19.492,45.99,15.274z" />
+        </svg>
+        <svg version="1.1" class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 70.866 45.224" style="enable-background:new 0 0 70.866 45.224;" xml:space="preserve">
+            <g>
+                <path d="M21.51,1.614C19.277,0.343,17.354,0,12.752,0h-6.32v22.91h5.599c5.083,0,7.041-0.344,9.412-1.717
+		c3.228-1.821,4.945-5.289,4.945-9.961C26.388,6.87,24.602,3.332,21.51,1.614z M19.965,19.235c-1.546,1.786-3.573,2.439-7.454,2.439
+		h-2.233V1.237h2.679c3.127,0,5.084,0.549,6.527,1.889c1.786,1.648,2.747,4.534,2.747,8.381
+		C22.232,14.908,21.476,17.483,19.965,19.235z" />
+                <polygon points="64.435,21.605 54.164,21.605 54.164,0 50.318,0 50.318,22.911 64.435,22.911 	" />
+                <path style="display: none;" d="M38.353,15.274v-3.592c-2.23,0-4.045-1.814-4.045-4.045c0-2.23,1.814-4.045,4.045-4.045
+		c2.23,0,4.045,1.814,4.045,4.045h3.592C45.99,3.419,42.571,0,38.353,0c-4.218,0-7.637,3.419-7.637,7.637
+		C30.716,11.855,34.135,15.274,38.353,15.274z" />
+                <path style="display: none;" d="M45.99,15.274c0-4.218-3.419-7.637-7.637-7.637v3.592c2.23,0,4.045,1.815,4.045,4.045
+		c0,2.23-1.814,4.045-4.045,4.045c-2.23,0-4.045-1.814-4.045-4.045h-3.592c0,4.218,3.419,7.637,7.637,7.637
+		C42.57,22.911,45.99,19.492,45.99,15.274z" />
+                <path d="M7.897,43.313c-0.454,0.746-1.437,1.255-2.401,1.255c-2.184,0-3.294-1.928-3.294-5.676
+		c0-3.731,1.128-5.659,3.311-5.659c0.965,0,1.874,0.473,2.366,1.201c0.382,0.601,0.546,1.164,0.618,2.147h2.056
+		c-0.09-0.928-0.291-1.51-0.746-2.129c-0.837-1.182-2.384-1.874-4.149-1.874c-1.492,0-2.874,0.473-3.839,1.328
+		C0.673,34.925,0,36.781,0,38.91c0,1.856,0.564,3.639,1.455,4.641c0.965,1.055,2.474,1.673,4.149,1.673
+		c1.783,0,3.331-0.69,4.167-1.892c0.473-0.692,0.692-1.329,0.8-2.366H8.497C8.443,42.094,8.279,42.695,7.897,43.313z" />
+                <path d="M16.917,32.724L11.604,44.97h1.345l1.492-3.949h4.768l1.583,3.949h2.256L17.9,32.724H16.917z
+		 M14.697,40.348l2.056-5.459l2.184,5.459H14.697z" />
+                <path d="M31.997,33.415c-0.764-0.436-1.62-0.583-3.385-0.583h-3.548V44.97h2.038v-5.15h1.492
+		c1.711,0,2.62-0.163,3.42-0.618c1.001-0.564,1.511-1.547,1.511-2.893C33.525,34.962,33.016,33.979,31.997,33.415z M28.74,39.184
+		h-1.638v-5.732h1.583c1.82,0,2.657,0.909,2.657,2.856C31.342,38.273,30.505,39.184,28.74,39.184z" />
+                <rect x="35.923" y="32.832" width="2.037" height="12.137" />
+                <polygon points="50.75,32.832 40.105,32.832 40.105,33.506 44.418,33.506 44.418,44.97 46.456,44.97 
+		46.456,33.506 50.75,33.506 	" />
+                <path d="M55.168,32.724L49.854,44.97h1.346l1.492-3.949h4.767l1.583,3.949H61.3l-5.15-12.246H55.168z
+		 M52.947,40.348l2.057-5.459l2.182,5.459H52.947z" />
+                <polygon points="65.425,44.278 65.425,32.832 63.387,32.832 63.387,44.97 70.866,44.97 70.866,44.278 	" />
+            </g>
+        </svg>
+        <p class="txt_sub wrap">DSL Capital is a leading digital asset investment firm focused on providing strategic, value-addinvestment to connect blockchain projects to the real world.</p>
+        </div>
+        <div class="down-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
+                xml:space="preserve">
+                <path d="M9.9,19.4l6-6c0.2-0.2,0.2-0.5,0-0.7s-0.5-0.2-0.7,0L10,17.8V-3.5C10-3.8,9.8-4,9.5-4S9-3.8,9-3.5v21.3l-5.1-5.1
+            c-0.2-0.2-0.5-0.2-0.7,0C3.1,12.7,3,12.9,3,13s0,0.3,0.1,0.4l6,6C9.3,19.5,9.7,19.5,9.9,19.4L9.9,19.4z" />
+            </svg>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="vertical">
+            <section class="wrap" data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="200">
+                <h2>Secure and Connected world</h2>
+                <p class="txt_24">DSL Capital is a leading digital asset investment firm focused on providing strategic, value-addinvestment to connect blockchain projects to the real world.</p>
+            </section>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="wrap">
+            <section class="inner about" data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="200">
+                <div class="box_title clearfix">
+                    <p class="title">ABOUT US</p>
+                    <em class="numb">01</em>
+                </div>
+                <h2>Global reach · Partners · Education</h2>
+                <p class="txt_body">DSL has developed strategic relationship with venture leaders around the world to ensure startup founders in all markets have the ability to work directly with local investors. We are dedicated to closing the communication and knowledge gap between venture investors and the individual proj ect teams.</p>
+            </section>
+            <section class="inner clearfix team" data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="200">
+                <div class="box_title clearfix">
+                    <p class="title">team</p>
+                    <em class="numb">02</em>
+                </div>
+                <div class="wrap">
+                    <ul class="list_profile clearfix">
+                        <li>
+                            <section>
+                                <p class="txt_name">Dennis S. Lee</p>
+                                <p class="txt_positon">Founding Partner</p>
+                            </section>
+                        </li>
+                        <li>
+                            <section>
+                                <p class="txt_name">Charles Lee</p>
+                                <p class="txt_positon">Partner</p>
+                            </section>
+                        </li>
+                        <li>
+                            <section>
+                                <p class="txt_name">Jason Chang</p>
+                                <p class="txt_positon">Partner</p>
+                            </section>
+                        </li>
+                        <li>
+                            <section>
+                                <p class="txt_name">Joseph Pince</p>
+                                <p class="txt_positon">Crypto Tech Expert</p>
+                            </section>
+                        </li>
+                        <li>
+                            <section>
+                                <p class="txt_name">Hoon Lee</p>
+                                <p class="txt_positon">Crypto Crypto eco reviewer</p>
+                            </section>
+                        </li>
+                        <li>
+                            <section>
+                                <p class="txt_name">Yaerin</p>
+                                <p class="txt_positon">Legal reviewer</p>
+                            </section>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="inner clearfix portfolio" data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="200">
+                <div class="box_title clearfix">
+                    <p class="title">portfolio</p>
+                    <em class="numb">03</em>
+                </div>
+                <ul class="list_logo clearfix">
+                    <li><a href="https://www.ethereum.org/" target="_blank"><img src="./img/logo_ethereum.png" alt="ethereum"></a></li>
+                    <li><a href="https://www.bitcoincash.org/" target="_blank"><img src="./img/logo_bitcoincash.png" alt="bitcoincash"></a></li>
+                    <li><a href="https://neo.org/" target="_blank"><img src="./img/logo_neo.png" alt="misego"></a></li>
+                    <li><a href="https://omisego.network/" target="_blank"><img src="./img/logo_omisego.png" alt="omisegonetwork"></a></li>
+                    <li><a href="https://eos.io/" target="_blank"><img src="./img/logo_eos.png" alt="eos"></a></li>
+                    <li><a href="https://qtum.org/" target="_blank"><img src="./img/logo_qtum.png" alt="qtum"></a></li>
+                    <li><a href="https://0xproject.com/" target="_blank"><img src="./img/logo_0xproject.png" alt="0xproject"></a></li>
+                    <li><a href="https://kyber.network/" target="_blank"><img src="./img/logo_kybernetwork.png" alt="kyber"></a></li>
+                    <li><a href="https://www.stormx.io/" target="_blank"><img src="./img/logo_storm.png" alt="storm"></a></li>
+                    <li><a href="https://ink.one/" target="_blank"><img src="./img/logo_ink.png" alt="ink"></a></li>
+                    <li><a href="https://crypto.com/en/index.html"><img src="./img/logo_monaco.png" alt="crypt"></a></li>
+                    <li><a href="https://mith.io/" target="_blank"><img src="./img/logo_mithril.png" alt="mithril"></a></li>
+                    <li><a href="https://www.bytex.io/index.html"><img src="./img/logo_bytex.png" alt="bytex"></a></li>
+                    <li><a href="https://langnet.io/" target="_blank"><img src="./img/logo_langnet.png" alt="langnet"></a></li>
+                    <li><a href="https://testnetexplorer.metadium.com/" target="_blank"><img src="./img/logo_metadium.png" alt="metadium"></a></li>
+                    <li><a href="https://ripple.com/xrp/" target="_blank"><img src="./img/logo_ripple.png" alt="ripple"></a></li>
+                    <li><a href="https://status.im/" target="_blank"><img src="./img/logo_status.png" alt="status"></a></li>
+                    <li><a href="https://www.civic.com/" target="_blank"><img src="./img/logo_civic.png" alt="civic"></a></li>
+                    <li><a href="https://dmarket.com/" target="_blank"><img src="./img/logo_dmarket.png" alt="dmarket"></a></li>
+                    <li><a href="https://www.powerledger.io/" target="_blank"><img src="./img/logo_powerledger.png" alt="powerledger"></a></li>
+                    <li><a href="https://www.binance.com/" target="_blank"><img src="./img/logo_binance.png" alt="binance"></a></li>
+                    <li><a href="https://www.iota.org/" target="_blank"><img src="./img/logo_iota.png" alt="iota"></a></li>
+                    <li><a href="https://litecoin.com/" target="_blank"><img src="./img/logo_litecoin.png" alt="litecoin"></a></li>
+                    <li><a href="https://unikrn.com/" target="_blank"><img src="./img/logo_unikrn.png" alt="unikrn"></a></li>
+                    <li><a href="https://nxtplatform.org/" target="_blank"><img src="./img/logo_nxtplatform.png" alt="nxt"></a></li>
+                    <li><a href="https://www.everex.io/" target="_blank"><img src="./img/logo_everex.png" alt="everex"></a></li><a></a><a></a><a></a><a></a><a></a><a></a>
+                    <li><a href="https://moss.land/" target="_blank"><img src="./img/logo_mossland.png" alt="mossland"></a></li>
+                    <li><a href="https://www.cortexlabs.ai/" target="_blank"><img src="./img/logo_cortexlabs.png" alt="cortexlabs"></a></li>
+                    <li><a href="https://loomx.io/" target="_blank"><img src="./img/logo_loomx.png" alt="loomnetwork"></a></li>
+                    <li><a href="https://z.cash/" target="_blank"><img src="./img/logo_zcash.png" alt="zcash"></a></li>
+                    <li><a href="https://h.cash/#section13" target="_blank"><img src="./img/logo_hcash.png" alt="hcash"></a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="vertical">
+            <div class="wrap clearfix">
+                <div class="col_2">
+                    <svg version="1.1" class="logo_small" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 70.866 45.224" style="enable-background:new 0 0 70.866 45.224;"
+                        xml:space="preserve">
+                        <g>
+                            <path d="M21.51,1.614C19.277,0.343,17.354,0,12.752,0h-6.32v22.91h5.599c5.083,0,7.041-0.344,9.412-1.717
+                                c3.228-1.821,4.945-5.289,4.945-9.961C26.388,6.87,24.602,3.332,21.51,1.614z M19.965,19.235c-1.546,1.786-3.573,2.439-7.454,2.439
+                                h-2.233V1.237h2.679c3.127,0,5.084,0.549,6.527,1.889c1.786,1.648,2.747,4.534,2.747,8.381
+                                C22.232,14.908,21.476,17.483,19.965,19.235z" />
+                            <polygon points="64.435,21.605 54.164,21.605 54.164,0 50.318,0 50.318,22.911 64.435,22.911 	" />
+                            <path d="M38.353,15.274v-3.592c-2.23,0-4.045-1.814-4.045-4.045c0-2.23,1.814-4.045,4.045-4.045
+                                c2.23,0,4.045,1.814,4.045,4.045h3.592C45.99,3.419,42.571,0,38.353,0c-4.218,0-7.637,3.419-7.637,7.637
+                                C30.716,11.855,34.135,15.274,38.353,15.274z" />
+                            <path d="M45.99,15.274c0-4.218-3.419-7.637-7.637-7.637v3.592c2.23,0,4.045,1.815,4.045,4.045
+                                c0,2.23-1.814,4.045-4.045,4.045c-2.23,0-4.045-1.814-4.045-4.045h-3.592c0,4.218,3.419,7.637,7.637,7.637
+                                C42.57,22.911,45.99,19.492,45.99,15.274z" />
+                            <path d="M7.897,43.313c-0.454,0.746-1.437,1.255-2.401,1.255c-2.184,0-3.294-1.928-3.294-5.676
+                                c0-3.731,1.128-5.659,3.311-5.659c0.965,0,1.874,0.473,2.366,1.201c0.382,0.601,0.546,1.164,0.618,2.147h2.056
+                                c-0.09-0.928-0.291-1.51-0.746-2.129c-0.837-1.182-2.384-1.874-4.149-1.874c-1.492,0-2.874,0.473-3.839,1.328
+                                C0.673,34.925,0,36.781,0,38.91c0,1.856,0.564,3.639,1.455,4.641c0.965,1.055,2.474,1.673,4.149,1.673
+                                c1.783,0,3.331-0.69,4.167-1.892c0.473-0.692,0.692-1.329,0.8-2.366H8.497C8.443,42.094,8.279,42.695,7.897,43.313z" />
+                            <path d="M16.917,32.724L11.604,44.97h1.345l1.492-3.949h4.768l1.583,3.949h2.256L17.9,32.724H16.917z
+                                 M14.697,40.348l2.056-5.459l2.184,5.459H14.697z" />
+                            <path d="M31.997,33.415c-0.764-0.436-1.62-0.583-3.385-0.583h-3.548V44.97h2.038v-5.15h1.492
+                                c1.711,0,2.62-0.163,3.42-0.618c1.001-0.564,1.511-1.547,1.511-2.893C33.525,34.962,33.016,33.979,31.997,33.415z M28.74,39.184
+                                h-1.638v-5.732h1.583c1.82,0,2.657,0.909,2.657,2.856C31.342,38.273,30.505,39.184,28.74,39.184z" />
+                            <rect x="35.923" y="32.832" width="2.037" height="12.137" />
+                            <polygon points="50.75,32.832 40.105,32.832 40.105,33.506 44.418,33.506 44.418,44.97 46.456,44.97 
+                                46.456,33.506 50.75,33.506 	" />
+                            <path d="M55.168,32.724L49.854,44.97h1.346l1.492-3.949h4.767l1.583,3.949H61.3l-5.15-12.246H55.168z
+                                 M52.947,40.348l2.057-5.459l2.182,5.459H52.947z" />
+                            <polygon points="65.425,44.278 65.425,32.832 63.387,32.832 63.387,44.97 70.866,44.97 70.866,44.278 	" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="col_7">
+                    <p class="txt_14">4F, L7 HOTEL GANGNAM TOWER, 415 Teheran-ro, Gangnam-gu, Seoul, Korea, 06160</p>
+                </div>
+                <div class="col_3">
+                    <p class="txt_14 txt_ccopy">@2018 DSL Capital All Right Reserved.</p>
+                </div>
+            </div>
+        </div>    
+    </footer>  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script  src="js/index.js"></script>
+</body>
+
+</html>
